@@ -30,7 +30,7 @@ public class Intent_1 extends AppCompatActivity {
             // 리턴을 받는 요청
             startActivityForResult(intent, 10001);
         });
-
+        // 1
         // 암시적 인텐트 만들기
 //        button.setOnClickListener(view -> {
 //            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));

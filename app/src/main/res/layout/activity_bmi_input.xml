@@ -8,35 +8,52 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="신장"
-        android:textSize="20dp" />
 
-    <EditText
-        android:id="@+id/heightEt"
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:hint="@string/str_height"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="체중"
-        android:textSize="20dp" />
+        app:boxBackgroundColor="#f5f5f5"
+        app:endIconDrawable="@drawable/baseline_favorite_border_24"
+        app:startIconDrawable="@drawable/baseline_favorite_border_24"
+        app:startIconTint="@color/purple_200">
 
-    <EditText
-        android:id="@+id/weightEt"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/heightEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="50dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:hint="@string/str_weight"
+        app:boxBackgroundColor="#f5f5f5"
+        app:endIconDrawable="@drawable/baseline_favorite_border_24"
+        app:startIconDrawable="@drawable/ic_baseline_follow_the_signs_24"
+        app:startIconTint="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weightEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/isOk"
+        android:layout_marginTop="50dp"
+        android:text="@string/str_confirm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="화인하기" />
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

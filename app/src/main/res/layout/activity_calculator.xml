@@ -45,10 +45,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="#ffffff"
-                android:textSize="30dp" />
+                style="@style/st_calculator_text_view"
+                android:text="4"/>
 
             <TextView
                 android:id="@+id/seven"

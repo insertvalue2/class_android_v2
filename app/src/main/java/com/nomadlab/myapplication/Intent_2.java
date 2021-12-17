@@ -18,12 +18,14 @@ public class Intent_2 extends AppCompatActivity {
         // 값을 꺼내는 방법
         int number1 = getIntent().getIntExtra("number1", 0);
         int number2 = getIntent().getIntExtra("number2", 0);
+
         Log.d("TAG", number1 + " < ----- ");
         Log.d("TAG", number2 + " < ----- ");
+
         int sum = number1 + number2;
         Button resultBtn = findViewById(R.id.resultBtn);
-        resultBtn.setText(sum + "");
 
+        resultBtn.setText(String.valueOf(sum));
         // 결과값을 다시 돌려 줄 때
         resultBtn.setOnClickListener(new View.OnClickListener() {
             @Override
