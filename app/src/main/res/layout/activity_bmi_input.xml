@@ -8,14 +8,23 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <include
+        layout="@layout/tool_bar"
+        android:id="@+id/tool_bar" />
+
+    <ImageView
+        app:tint="@color/purple_200"
+        android:src="@drawable/ic_baseline_accessibility_new_24"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
-
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/str_height"
-
         app:boxBackgroundColor="#f5f5f5"
         app:endIconDrawable="@drawable/baseline_favorite_border_24"
         app:startIconDrawable="@drawable/baseline_favorite_border_24"
